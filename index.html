@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Responsive webpage</title>
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">Kishor Kumar G S</div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="nav-links">
+                    <a class="top-menu" href="#home">Home</a>
+                    <a class="top-menu" href="#about">About</a>
+                    <a class="top-menu" href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content of the page -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <img class="hero-img" src="man.png" alt="A picture of a man" >
+                <div class="hero-text"> 
+                    <h1>Welcome to my Webpage</h1>
+                    <p>This is a responsive webpage</p>
+                    <p>I create modern, responsive web experiences that adapt beautifully across all devices.</p>
+                </div>
+            </div>   
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am dedicated to learn the new technologies, excelling in them and provide best service possible.</p>
+            <p>Currently focusing on applying the skills I learned into projects and hackathons.</p>
+            <p>Willing to do more internships that will enhance my skills and give me a professional experience.</p>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out with any questions or concerns.</p>
+            <div class="contact-info">
+                <img src="envelope.png" alt="https://icons8.com/icon/124377/circled-envelope" width="50" height="50">
+                <a href="mailto:kishorkumargs85@gmail.com">kishorkumargs85@gmail.com</a></p>
+            </div>
+            <div class="contact-info">
+                <img src="phone.png" alt="https://icons8.com/icon/jShwZ2RCyPSO/phone" width="50" height="50">
+                <a href="tel:+917397096555">+91 7397096555</a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2025 Kishor Kumar G S | All Rights Reserved</p>
+        </footer>
+        <script>
+            const menu = document.getElementById('mobile-menu');
+            const navLinks = document.querySelector('.nav-links');
+
+            menu.addEventListener('click', () => {
+                menu.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+        </script>
+    </body>
+</html>
